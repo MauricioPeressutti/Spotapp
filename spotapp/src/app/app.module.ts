@@ -11,6 +11,12 @@ import { ArtistaComponent } from './components/artista/artista.component';
 import { NavbarComponent } from './components/shares/navbar/navbar.component';
 
 import { ROUTES } from './components/app.routes';
+import { NoimagePipe } from './pipes/noimage.pipe';
+
+
+/* SERVICIOS */ 
+
+
 
 @NgModule({
   declarations: [
@@ -18,7 +24,8 @@ import { ROUTES } from './components/app.routes';
     HomeComponent,
     SearchComponent,
     ArtistaComponent,
-    NavbarComponent
+    NavbarComponent,
+    NoimagePipe
   ],
   imports: [
     BrowserModule,

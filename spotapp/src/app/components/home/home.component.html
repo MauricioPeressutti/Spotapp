@@ -1,1 +1,14 @@
-<p>home works!</p>
+<div class="row">
+    <div class="col-4" *ngFor="let cancion of nuevasCanciones ">
+        <div class="card mt-2">
+            <img class="card-img-top" height="400px" [src]="cancion.images | noimage" alt=""> 
+            <div class="card-body">
+                <h5 class="card-title">{{ cancion.name }}</h5>
+                <p class="card-text"> <span *ngFor="let artista of cancion.artists" class="badge bg-secondary"> {{artista.name}} </span> </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- cancion.images.[0].url -->
